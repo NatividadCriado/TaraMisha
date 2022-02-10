@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* font-family: 'Courgette', cursive; */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 65.2%;
+}
+@media screm and (min-width: 320px){
+    .navega{
+        display: inline-block;
+        grid-template-columns: repeat(4 auto);
+        grid-template-rows: auto;
+        grid-template-areas: "navega1 navega2" "navega3 navega4"
+    }
+    .barra{
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr ;
+    }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .Eventos{
+        grid-template-columns: 1 fr;
+        grid-template-rows: repeat(4 1fr);
+        grid-template-areas: "titulo" "evento1" "evento2" "evento3";
+    }
+}
+
+header img{
+    background-image: url("Imagenes/encabezado.jpg");
+    height: 15vw;
+    width: 100vw;
+}
+header nav{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(250, 177, 89);
+}
+    .navega {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+}
+header ul li{
+    display: inline-block;
+}
+.barra{
+    display: grid;
+    height: auto;
+    width: 100vw;
+    background-color: rgb(252, 128, 204);
+    justify-items: center;
+    align-items: center;
+    margin-top: 0.15rem;
+}
+section li{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(165, 42, 159);
+    display: inline-block;
+}
+
+.Eventos{
+    display: grid;
+    height: auto;
+    width: 100vw;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "titulo titulo titulo" "evento1 evento2 evento3";
+    justify-items: center;
+}
+.evento1{
+    grid-area: evento1;
+}
+.evento2{
+    grid-area: evento2;
+}
+.evento3{
+    grid-area: evento3;
+}
+.titulo{
+    grid-area: titulo;
+    justify-self: center;
+}
+section article img{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div{
+    font-size: 20px;
+}
+.border{
+    border: 2px violet solid;
+}
+main{
+    display: grid;
+    height: 90vw;
+    width: 100vw;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: repeat(5 auto);
+    grid-template-areas: "titulo titulo" "foto1 foto2" "foto3 foto4" "foto5 foto6" "video video";
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+.foto2{
+    grid-area: foto2;
+}
+.foto3{
+    grid-area: foto3;
+}
+.foto4{
+    grid-area: foto4;
+}
+.foto5{
+    grid-area: foto5;
+}
+.foto{
+    grid-area: foto6;
+}
+.video{
+    grid-area: video;
+}
+
+section p{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 30rem;
+    height: 10rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+body{
+    background-color: rgb(252, 207, 252);
+}
+body ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-family: 'Courgette', cursive;
+}
+footer{
+    display: grid;
+    height: auto;
+    width: 100vw;
+    background-color: orange;
+    justify-items: center;
+}
+
+h1{
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(112, 47, 107);
+}
+
+form fieldset legend{
+    font-size: 25px;
+    color:rgb(112, 47, 107);
+}
+label{
+    font-size: 16px;
+    color:rgb(112, 47, 107) ;
+}
+textarea{
+    width: 400px;
+    height: 150px;
+}
+body h1 img{
+    margin-left: 10px;
+}
+.foto1{
+    padding: 10px; margin-top: 10px; margin-left: 20px; margin-bottom: 10px;
+}
+
+iframe{
+    margin-left: 400px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    color: rgb(209, 12, 150);
+}
+dl dt b{
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    margin-left: 20px;
+    color:rgb(112, 47, 107) ;
+}
+dl dd{
+    font-size: 18px;
+    font-family: 'Courgette', cursive;
+    margin-left: 40px;
+    color: rgb(209, 12, 150);
+}
+.reg{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;}

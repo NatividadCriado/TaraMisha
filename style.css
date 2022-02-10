@@ -55,7 +55,7 @@ header ul li{
     display: grid;
     height: auto;
     width: 100vw;
-    background-color: rgb(252, 128, 204);
+    background-color: rgb(248, 93, 201);
     justify-items: center;
     align-items: center;
     margin-top: 0.15rem;
@@ -70,6 +70,34 @@ section li{
     color: rgb(165, 42, 159);
     display: inline-block;
 }
+.animacion{
+    grid-area: titulo;
+    justify-self: center;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(112, 47, 107);
+    animation: anima;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+    @keyframes anima {
+        0%{
+            font-size: 15px;
+        }
+        25%{
+            font-size: 20px;
+
+        }
+        75%{
+            font-size: 25px;
+        }
+        100%{
+            font-size: 20px ;
+        }
+    }
 
 .Eventos{
     display: grid;

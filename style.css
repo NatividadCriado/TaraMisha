@@ -59,6 +59,7 @@ header ul li{
     justify-items: center;
     align-items: center;
     margin-top: 0.15rem;
+    list-style-type: none;
 }
 section li{
     list-style-type: none;
